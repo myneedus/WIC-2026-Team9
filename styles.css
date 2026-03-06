@@ -107,6 +107,13 @@ button:hover {
 
 .navbar ul {
     z-index: 1000; /* Ensures the navbar is on top of other elements */
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 
@@ -116,11 +123,17 @@ button:hover {
 }
 
 
-.navbar ul li a { 
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color:#0f2608b3;
+    text-align: center;
+    padding: 14px 16px
 }
 
 
 .navbar ul li a:hover {
+    text-decoration: underline;
 }
 
 /*** Review Section ***/
