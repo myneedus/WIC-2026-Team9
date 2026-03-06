@@ -161,13 +161,13 @@ button:hover {
 
 :root {
     /* Light Mode */
-    --bg-color: #a6a0cf;
-    --text-color: #231942;
+    --bg-color: #eeebd1ea;
+    --text-color: #0f2608b3;
 
 
     /* Dark Mode */
-    --bg-color-dark-mode: #3e3377;
-    --text-color-dark-mode: #fff;
+    --bg-color-dark-mode: #0f2608b3;
+    --text-color-dark-mode: #eeebd1ea;
 
 
     /* Accent Colors */
