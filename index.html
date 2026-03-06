@@ -42,76 +42,131 @@
         Whether you're looking for a quiet spot to focus or a lively atmosphere to keep you motivated, Driftcha has got you covered.
     </p>
 
-
-    <!--- DATA --->
-    <h3>Data about my topic</h3>
-    <img src="" />
-    <h4>Add some charts + captions that illustrate my topic and why it is a problem </h4>
-
-
-    <ul>
-        <li> less than 15%</li>
-        <li> 15%-25%</li>
-        <li> 25%-35%</li>
-        <li> 35%-45%</li>
-        <li> >45%</li>
-    </ul>
-    <!--- IMPACT --->
-    <h2>Impact!</h2>
-
-
-    <img src="" />
-    <h3>Where can this problem have lasting effects?</h3>
-    <p>Why?
-    </p>
-
-
-    <img src="" />
-    <h3>Where else can this problem have lasting effects?</h3>
-    <p>Why?
-    </p>
-
-
-    <img src="" />
-    <h3>Where else else can this problem have lasting effects?</h3>
-    <p>Why?
-    </p>
-
-
-    <!--- NEWS --->
-    <h2>Recent News</h2>
-
-
-    <a class=""
-        href="">
-        <article>
-            <h3></h3>
-            <p></p>
-        </article>
-    </a>
-
-
     <!--- REVIEW FORM --->
     <h2>Review Form</h2>
 
     <form
     action="https://formspree.io/f/mykdgyvo"
+    class="fs-form fs-layout__2-column"
+    target="_top"
     method="POST"
     >
-    <label>
-        Username:
-        <input type="username" name="username">
-    </label>
-    <label>
-        Cafe Name:
-        <textarea name="cafe name"></textarea>
-    </label>
-    <label>
-        Rating:
-        <textarea name="rating"></textarea>
-    </label>
-    <button type="submit">Submit</button>
-    </form>
+    <div class="fs-field">
+        <label class="fs-label" for="name">Name</label>
+        <input
+        class="fs-input"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+        />
+    </div>
+    <div class="fs-field">
+        <label class="fs-label" for="email-address">Email Address</label>
+        <input
+        class="fs-input"
+        id="email-address"
+        name="email-address"
+        placeholder="Enter your email address"
+        required
+        />
+    </div>
+    <div class="fs-field">
+        <label class="fs-label" for="cafe-name">Cafe Name</label>
+        <input
+        class="fs-input"
+        id="cafe-name"
+        name="cafe-name"
+        placeholder="Enter the name of the cafe"
+        required
+        />
+    </div>
+    <div class="fs-field" style="margin-bottom: 2rem">
+        <label class="fs-label" for="overall-satisfaction">
+        Overall Satisfaction (1-5)
+        </label>
+        <input
+        class="fs-slider"
+        id="overall-satisfaction"
+        max="5"
+        min="1"
+        name="overall-satisfaction"
+        required
+        step="1"
+        type="range"
+        value="5"
+        />
+        <div class="slider-label-container">
+        <span class="slider-label-text">1</span>
+        <span class="slider-label-text">2</span>
+        <span class="slider-label-text">3</span>
+        <span class="slider-label-text">4</span>
+        <span class="slider-label-text">5</span>
+    </div>
+    <div class="fs-field">
+        <label class="fs-label" for="drink-name">Drink Name</label>
+        <input
+        class="fs-input"
+        id="drink-name"
+        name="drink-name"
+        placeholder="Enter the name of the drink"
+        required
+        />
+    </div>
+    <div class="fs-field" style="margin-bottom: 2rem">
+        <label class="fs-label" for="nps-score">
+        Drink Rating (0-10)
+        </label>
+        <input
+        class="fs-slider"
+        id="nps-score"
+        max="10"
+        min="0"
+        name="nps-score"
+        required
+        step="1"
+        type="range"
+        value="10"
+        />
+        <div class="slider-label-container">
+        <span class="slider-label-text">0</span>
+        <span class="slider-label-text">5</span>
+        <span class="slider-label-text">10</span>
+        </div>
+    </div>
+    <div class="fs-field">
+        <label class="fs-label" for="drink-notes">Drink Notes</label>
+        <textarea
+        class="fs-textarea"
+        id="drink-notes"
+        name="drink-notes"
+        placeholder="Describe the drink"
+        ></textarea>
+    </div>
+    <div class="fs-field">
+        <label class="fs-label" for="like-most">Environment Studiability</label>
+        <textarea
+        class="fs-textarea"
+        id="env-stud"
+        name="env-stud"
+        placeholder="Describe the studying environment"
+        ></textarea>
+    </div>
+    <div class="fs-field">
+        <label class="fs-label" for="additional-comments">
+        Additional Comments or Suggestions
+        </label>
+        <textarea
+        class="fs-textarea"
+        id="additional-comments"
+        name="additional-comments"
+        placeholder="Share anything else you&#x27;d like us to know"
+        ></textarea>
+    </div>
+    <div class="fs-button-group">
+        <button class="fs-button" type="submit">Submit</button>
+    </div>
+</form>
 
 </body>
 
