@@ -4,6 +4,42 @@
   - This is useful if you want a rule to apply to EVERYTHING on your page
     - (Tip: You can always override these rules later in the stylesheet)
 ***/
+.header-container {
+    position: relative;
+    width: calc(100% + 100px);  /* cancels out the 50px margin on each side */
+    margin-left: -50px;          /* pulls it back to the edge */
+    margin-top: 20px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.header-bg {
+    position: absolute;        /* ← this is missing! */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.header-content {
+    position: absolute;        /* sits on top of the image */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.header-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 16px;
+}
 
 
 body {
